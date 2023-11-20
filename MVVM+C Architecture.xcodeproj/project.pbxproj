@@ -7,23 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0A88BF2B09614100AAADDE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88BE2B09614100AAADDE /* Storyboarded.swift */; };
+		4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88C02B09635600AAADDE /* BaseNavigationController.swift */; };
+		4D0A88C32B0964DD00AAADDE /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88C22B0964DD00AAADDE /* LoginViewModelProtocol.swift */; };
+		4D0A88C52B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88C42B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift */; };
+		4D0A88C72B0B63BC00AAADDE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88C62B0B63BC00AAADDE /* BaseViewModel.swift */; };
+		4D0A88CC2B0B897F00AAADDE /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88CB2B0B897F00AAADDE /* SignupViewModel.swift */; };
+		4D0A88CE2B0B89B900AAADDE /* SignupViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88CD2B0B89B900AAADDE /* SignupViewModelProtocol.swift */; };
+		4D0A88D02B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88CF2B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift */; };
+		4D0A88D22B0B89D300AAADDE /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88D12B0B89D300AAADDE /* SignupCoordinator.swift */; };
 		4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74A42B062C1500B1E789 /* AppDelegate.swift */; };
 		4D6D74A72B062C1500B1E789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74A62B062C1500B1E789 /* SceneDelegate.swift */; };
-		4D6D74A92B062C1500B1E789 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74A82B062C1500B1E789 /* ViewController.swift */; };
-		4D6D74AC2B062C1500B1E789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74AA2B062C1500B1E789 /* Main.storyboard */; };
 		4D6D74AE2B062C1600B1E789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74AD2B062C1600B1E789 /* Assets.xcassets */; };
 		4D6D74B12B062C1600B1E789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74AF2B062C1600B1E789 /* LaunchScreen.storyboard */; };
+		4D6D74C42B062CB400B1E789 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74C32B062CB400B1E789 /* AppCoordinator.swift */; };
+		4D6D74C62B062CD600B1E789 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74C52B062CD600B1E789 /* IntroViewController.swift */; };
+		4D6D74C82B062CE900B1E789 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74C72B062CE900B1E789 /* Intro.storyboard */; };
+		4D6D74CA2B062D0500B1E789 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74C92B062D0500B1E789 /* LoginViewController.swift */; };
+		4D6D74CC2B062D1000B1E789 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74CB2B062D1000B1E789 /* Login.storyboard */; };
+		4D6D74CE2B062D2300B1E789 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74CD2B062D2300B1E789 /* IntroViewModel.swift */; };
+		4D6D74D02B062D3200B1E789 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74CF2B062D3200B1E789 /* LoginViewModel.swift */; };
+		4D6D74D22B062D4400B1E789 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74D12B062D4400B1E789 /* IntroCoordinator.swift */; };
+		4D6D74D42B062D5200B1E789 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74D32B062D5200B1E789 /* LoginCoordinator.swift */; };
+		4D6D74D72B062F0500B1E789 /* IntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74D62B062F0500B1E789 /* IntroModel.swift */; };
+		4D6D74DF2B06332500B1E789 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74DE2B06332500B1E789 /* UIView+Extension.swift */; };
+		4D6D74E32B0637E900B1E789 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E22B0637E900B1E789 /* SignupViewController.swift */; };
+		4D6D74E52B0637F400B1E789 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74E42B0637F400B1E789 /* Signup.storyboard */; };
+		4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */; };
+		4D6D74E92B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */; };
+		4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74EA2B06416E00B1E789 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0A88BE2B09614100AAADDE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		4D0A88C02B09635600AAADDE /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		4D0A88C22B0964DD00AAADDE /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
+		4D0A88C42B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		4D0A88C62B0B63BC00AAADDE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		4D0A88CB2B0B897F00AAADDE /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		4D0A88CD2B0B89B900AAADDE /* SignupViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModelProtocol.swift; sourceTree = "<group>"; };
+		4D0A88CF2B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		4D0A88D12B0B89D300AAADDE /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
 		4D6D74A12B062C1500B1E789 /* MVVM+C Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+C Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6D74A42B062C1500B1E789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D6D74A62B062C1500B1E789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D6D74A82B062C1500B1E789 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D6D74AB2B062C1500B1E789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D6D74AD2B062C1600B1E789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D6D74B02B062C1600B1E789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D6D74B22B062C1600B1E789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D6D74C32B062CB400B1E789 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4D6D74C52B062CD600B1E789 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		4D6D74C72B062CE900B1E789 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		4D6D74C92B062D0500B1E789 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D6D74CB2B062D1000B1E789 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4D6D74CD2B062D2300B1E789 /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
+		4D6D74CF2B062D3200B1E789 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4D6D74D12B062D4400B1E789 /* IntroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
+		4D6D74D32B062D5200B1E789 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		4D6D74D62B062F0500B1E789 /* IntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroModel.swift; sourceTree = "<group>"; };
+		4D6D74DE2B06332500B1E789 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4D6D74E22B0637E900B1E789 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		4D6D74E42B0637F400B1E789 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelProtocol.swift; sourceTree = "<group>"; };
+		4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		4D6D74EA2B06416E00B1E789 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0A88C82B0B895400AAADDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88CB2B0B897F00AAADDE /* SignupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D0A88C92B0B895800AAADDE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88CD2B0B89B900AAADDE /* SignupViewModelProtocol.swift */,
+				4D0A88CF2B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4D0A88CA2B0B895D00AAADDE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88D12B0B89D300AAADDE /* SignupCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		4D6D74982B062C1500B1E789 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +127,157 @@
 		4D6D74A32B062C1500B1E789 /* MVVM+C Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				4D6D74D52B062EF400B1E789 /* Models */,
+				4D6D74E02B0637BD00B1E789 /* Signup */,
+				4D6D74B92B062C2700B1E789 /* Login */,
+				4D6D74B82B062C2100B1E789 /* Intro */,
+				4D6D74DD2B06330900B1E789 /* Extension */,
+				4D6D74EC2B06466400B1E789 /* Base */,
 				4D6D74A42B062C1500B1E789 /* AppDelegate.swift */,
 				4D6D74A62B062C1500B1E789 /* SceneDelegate.swift */,
-				4D6D74A82B062C1500B1E789 /* ViewController.swift */,
-				4D6D74AA2B062C1500B1E789 /* Main.storyboard */,
 				4D6D74AD2B062C1600B1E789 /* Assets.xcassets */,
 				4D6D74AF2B062C1600B1E789 /* LaunchScreen.storyboard */,
 				4D6D74B22B062C1600B1E789 /* Info.plist */,
 			);
 			path = "MVVM+C Architecture";
+			sourceTree = "<group>";
+		};
+		4D6D74B82B062C2100B1E789 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74BE2B062C5700B1E789 /* Coordinator */,
+				4D6D74BD2B062C5400B1E789 /* Protocols */,
+				4D6D74BC2B062C5100B1E789 /* ViewModel */,
+				4D6D74BB2B062C4D00B1E789 /* View */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		4D6D74B92B062C2700B1E789 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74C22B062C8F00B1E789 /* Coordinator */,
+				4D6D74C12B062C8900B1E789 /* Protocols */,
+				4D6D74C02B062C8600B1E789 /* ViewModel */,
+				4D6D74BF2B062C8100B1E789 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4D6D74BB2B062C4D00B1E789 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74C52B062CD600B1E789 /* IntroViewController.swift */,
+				4D6D74C72B062CE900B1E789 /* Intro.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D6D74BC2B062C5100B1E789 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74CD2B062D2300B1E789 /* IntroViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D6D74BD2B062C5400B1E789 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */,
+				4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4D6D74BE2B062C5700B1E789 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74D12B062D4400B1E789 /* IntroCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4D6D74BF2B062C8100B1E789 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74C92B062D0500B1E789 /* LoginViewController.swift */,
+				4D6D74CB2B062D1000B1E789 /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D6D74C02B062C8600B1E789 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74CF2B062D3200B1E789 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D6D74C12B062C8900B1E789 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88C22B0964DD00AAADDE /* LoginViewModelProtocol.swift */,
+				4D0A88C42B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4D6D74C22B062C8F00B1E789 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74D32B062D5200B1E789 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4D6D74D52B062EF400B1E789 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74D62B062F0500B1E789 /* IntroModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D6D74DD2B06330900B1E789 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88BE2B09614100AAADDE /* Storyboarded.swift */,
+				4D6D74DE2B06332500B1E789 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D6D74E02B0637BD00B1E789 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88CA2B0B895D00AAADDE /* Coordinator */,
+				4D0A88C92B0B895800AAADDE /* Protocols */,
+				4D0A88C82B0B895400AAADDE /* ViewModel */,
+				4D6D74E12B0637D200B1E789 /* View */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		4D6D74E12B0637D200B1E789 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74E22B0637E900B1E789 /* SignupViewController.swift */,
+				4D6D74E42B0637F400B1E789 /* Signup.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D6D74EC2B06466400B1E789 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D74EA2B06416E00B1E789 /* Coordinator.swift */,
+				4D6D74C32B062CB400B1E789 /* AppCoordinator.swift */,
+				4D0A88C02B09635600AAADDE /* BaseNavigationController.swift */,
+				4D0A88C62B0B63BC00AAADDE /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +340,9 @@
 			files = (
 				4D6D74B12B062C1600B1E789 /* LaunchScreen.storyboard in Resources */,
 				4D6D74AE2B062C1600B1E789 /* Assets.xcassets in Resources */,
-				4D6D74AC2B062C1500B1E789 /* Main.storyboard in Resources */,
+				4D6D74CC2B062D1000B1E789 /* Login.storyboard in Resources */,
+				4D6D74E52B0637F400B1E789 /* Signup.storyboard in Resources */,
+				4D6D74C82B062CE900B1E789 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +353,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D6D74A92B062C1500B1E789 /* ViewController.swift in Sources */,
+				4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */,
+				4D0A88C32B0964DD00AAADDE /* LoginViewModelProtocol.swift in Sources */,
+				4D6D74CA2B062D0500B1E789 /* LoginViewController.swift in Sources */,
+				4D0A88CC2B0B897F00AAADDE /* SignupViewModel.swift in Sources */,
+				4D6D74C62B062CD600B1E789 /* IntroViewController.swift in Sources */,
+				4D6D74D72B062F0500B1E789 /* IntroModel.swift in Sources */,
+				4D6D74D42B062D5200B1E789 /* LoginCoordinator.swift in Sources */,
+				4D6D74D22B062D4400B1E789 /* IntroCoordinator.swift in Sources */,
+				4D0A88CE2B0B89B900AAADDE /* SignupViewModelProtocol.swift in Sources */,
+				4D6D74C42B062CB400B1E789 /* AppCoordinator.swift in Sources */,
+				4D6D74DF2B06332500B1E789 /* UIView+Extension.swift in Sources */,
+				4D0A88BF2B09614100AAADDE /* Storyboarded.swift in Sources */,
+				4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */,
+				4D0A88D22B0B89D300AAADDE /* SignupCoordinator.swift in Sources */,
+				4D6D74E92B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift in Sources */,
+				4D0A88D02B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift in Sources */,
+				4D6D74CE2B062D2300B1E789 /* IntroViewModel.swift in Sources */,
+				4D6D74D02B062D3200B1E789 /* LoginViewModel.swift in Sources */,
+				4D0A88C52B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift in Sources */,
+				4D6D74E32B0637E900B1E789 /* SignupViewController.swift in Sources */,
+				4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */,
+				4D0A88C72B0B63BC00AAADDE /* BaseViewModel.swift in Sources */,
 				4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */,
 				4D6D74A72B062C1500B1E789 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +383,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D6D74AA2B062C1500B1E789 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D6D74AB2B062C1500B1E789 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D6D74AF2B062C1600B1E789 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +519,6 @@
 				INFOPLIST_FILE = "MVVM+C Architecture/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +545,6 @@
 				INFOPLIST_FILE = "MVVM+C Architecture/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
