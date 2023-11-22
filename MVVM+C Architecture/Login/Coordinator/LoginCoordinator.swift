@@ -26,7 +26,10 @@ class LoginCoordinator: PushCoordinator{
     }
 }
 extension LoginCoordinator: LoginViewModelCoordinatorDelegate{
-    func showHome() {
+    func showHome(email: String, password:String) {
+        let homeViewModel = HomeViewModel()
+              homeViewModel.email = email
+              homeViewModel.password = password
         homeCoordinator = HomeCoordinator(viewModel: HomeViewModel(), navigationController: self.viewController?.navigationController)
         homeCoordinator?.start()
     }

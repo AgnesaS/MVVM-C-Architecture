@@ -8,5 +8,7 @@
 import Foundation
 
 class HomeViewModel: HomeViewModelProtocol{
+    var email: String?
+    var password: String?
     weak var coordinatorDelegate : HomeViewModelCoordinatorDelegate?
 }

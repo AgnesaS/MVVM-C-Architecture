@@ -12,4 +12,7 @@ class SignupViewModel: SignupViewModelProtocol{
     func showLogin() {
         self.coordinatorDelegate?.showLogin()
     }
+    func showHome() {
+        self.coordinatorDelegate?.showHome()
+    }
 }

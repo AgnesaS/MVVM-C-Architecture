@@ -14,6 +14,7 @@ class SignupCoordinator: PushCoordinator{
     var configuration: ((SignupViewController) -> ())?
     var viewModel: SignupViewModelProtocol
     var loginCoordinator: LoginCoordinator?
+    var homeCoordinator: HomeCoordinator?
     
     init(viewModel: SignupViewModelProtocol, navigationController: UINavigationController?) {
         self.viewModel = viewModel
@@ -24,6 +25,11 @@ class SignupCoordinator: PushCoordinator{
     }
 }
 extension SignupCoordinator: SignupViewModelCoordinatorDelegate {
+    func showHome() {
+        homeCoordinator = HomeCoordinator(viewModel: HomeViewModel(), navigationController: self.viewController?.navigationController)
+        homeCoordinator?.start()
+    }
+    
     func showLogin() {
         loginCoordinator = LoginCoordinator(viewModel: LoginViewModel(), navigationController: self.viewController?.navigationController)
         loginCoordinator?.start()

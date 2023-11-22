@@ -11,10 +11,14 @@ class LoginViewController: UIViewController, Storyboarded {
     //MARK: - Properties
     var viewModel: LoginViewModelProtocol?
     var coordinator: LoginCoordinator?
+    var email: String?
+    var password: String?
+    //MARK: IBOutlets
     @IBOutlet weak var imageView: UIImageView!
-    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
     }
   //MARK: - IBActions
     @IBAction func backBtnTapped(_ sender: Any) {
@@ -23,11 +27,11 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBAction func forgotPassBtnTapped(_ sender: Any) {
     }
     @IBAction func loginBtnTapped(_ sender: Any) {
-        self.viewModel?.showHome()
+        self.viewModel?.showHome(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        
     }
     @IBAction func signupBtnTapped(_ sender: Any) {
         self.viewModel?.showSignup()
-        print("Signup")
     }
 }
 extension LoginViewController : Coordinated {

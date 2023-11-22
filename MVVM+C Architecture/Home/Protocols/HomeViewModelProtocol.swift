@@ -9,4 +9,6 @@ import Foundation
 
 protocol HomeViewModelProtocol :  BaseViewModel {
     var coordinatorDelegate: HomeViewModelCoordinatorDelegate? {get set}
+      var email: String? { get set }
+      var password: String? { get set }
 }

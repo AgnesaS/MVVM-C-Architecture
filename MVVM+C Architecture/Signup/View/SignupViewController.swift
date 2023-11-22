@@ -24,6 +24,9 @@ class SignupViewController: UIViewController, Storyboarded {
     @IBAction func loginBtnTapped(_ sender: Any) {
         self.viewModel?.showLogin()
     }
+    @IBAction func signupBtnTapped(_ sender: Any) {
+        self.viewModel?.showHome()
+    }
 }
 extension SignupViewController: Coordinated {
     func getCoordinator() -> Coordinator? {

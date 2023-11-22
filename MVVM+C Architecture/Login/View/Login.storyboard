@@ -245,7 +245,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="tg0-8s-gkV" id="PSA-yB-y85"/>
                         <outlet property="imageView" destination="OUn-a8-4wW" id="LhW-a8-Xwg"/>
+                        <outlet property="passwordTextField" destination="WGb-Wn-d6c" id="imn-ff-410"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1F6-L8-Ly9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

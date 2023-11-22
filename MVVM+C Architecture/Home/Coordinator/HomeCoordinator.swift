@@ -19,6 +19,4 @@ class HomeCoordinator: PushCoordinator{
         self.viewController = HomeViewController.instantiate(.home)
         self.viewController?.viewModel = viewModel
     }
-    
-    
 }

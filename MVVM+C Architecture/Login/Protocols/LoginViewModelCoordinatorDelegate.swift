@@ -9,5 +9,5 @@ import Foundation
 
 protocol LoginViewModelCoordinatorDelegate: AnyObject {
    func showSignup()
-    func showHome()
+    func showHome(email: String, password: String)
 }

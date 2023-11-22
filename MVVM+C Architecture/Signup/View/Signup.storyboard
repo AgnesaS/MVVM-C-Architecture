@@ -214,6 +214,9 @@
                                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signupBtnTapped:" destination="mjV-Fo-ahz" eventType="touchUpInside" id="tXt-If-p5s"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kBD-1e-XSz">
                                                 <rect key="frame" x="108.00000000000001" y="778" width="177.33333333333337" height="30"/>

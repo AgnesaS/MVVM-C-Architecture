@@ -9,4 +9,5 @@ import Foundation
 
 protocol SignupViewModelCoordinatorDelegate: AnyObject{
     func showLogin()
+    func showHome()
 }

@@ -12,8 +12,8 @@ class LoginViewModel: LoginViewModelProtocol {
     func showSignup() {
         coordinatorDelegate?.showSignup()
     }
-    func showHome() {
-        coordinatorDelegate?.showHome()
+    func showHome(email: String, password: String) {
+        coordinatorDelegate?.showHome(email: email, password: password)
     }
     
    

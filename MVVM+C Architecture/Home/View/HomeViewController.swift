@@ -6,35 +6,57 @@
 //
 
 import UIKit
+import Alamofire
 
-class HomeViewController: UIViewController, Storyboarded {
-
-    var viewModel: HomeViewModelProtocol?
-    var coordinator: HomeCoordinator?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+class HomeViewController: UIViewController, Storyboarded{
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var postTableView: UITableView!
+    @IBOutlet weak var textLabel: UILabel!
+    var viewModel: HomeViewModelProtocol?
+    var coordinator: HomeCoordinator?
+    var postResponse: Welcome?
+    var request: PostRequests = PostRequests()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupTableView()
+        if let email = viewModel?.email, let password = viewModel?.password {
+            textLabel.text = "Hello \(email) - Your password is \(password)"
+            // Do any additional setup after loading the view.
+        }
+        request.getPost { success in
+            self.postResponse = success
+            self.postTableView.reloadData()
+        }
     }
-    */
+    
+    func setupTableView(){
+        postTableView.dataSource = self
+        postTableView.delegate = self
+        postTableView.register(UINib(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: PostCell.identifier)
+    }
 
+    @IBAction func backBtnTapped(_ sender: Any) {
+        self.coordinator?.stop()
+    }
 }
-
 extension HomeViewController: Coordinated {
     func getCoordinator() -> Coordinator? {
         return coordinator
     }
     func setCoordinator(_ coordinator: Coordinator) {
         self.coordinator = coordinator as? HomeCoordinator
+    }
+}
+extension HomeViewController: UITableViewDataSource , UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return postResponse?.days.count ?? 0
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = postTableView.dequeueReusableCell(withIdentifier: "PostCell")! as? PostCell
+        cell?.postData = postResponse?.days[indexPath.row]
+        return cell ?? UITableViewCell()
     }
 }
