@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    //    imageView.roundBottomCorners()
+       imageView.roundBottomCorners()
         
     }
   //MARK: - IBActions
