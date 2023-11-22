@@ -17,8 +17,8 @@ extension Storyboarded where Self: UIViewController {
 }
 
 extension UIStoryboard {
-    static var firstScreen: UIStoryboard {
-        return UIStoryboard(name: "SplashScreen", bundle: nil)
+    static var splash: UIStoryboard {
+        return UIStoryboard(name: "Splash", bundle: nil)
     }
     static var intro: UIStoryboard {
         return UIStoryboard(name: "Intro", bundle: nil)

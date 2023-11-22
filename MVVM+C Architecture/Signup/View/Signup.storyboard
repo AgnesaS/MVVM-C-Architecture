@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-zd-jYz">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-zd-jYz">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-ov-aQZ">
@@ -44,6 +44,12 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm0-Rw-Y75">
+                                                <rect key="frame" x="142.33333333333334" y="110.00000000000001" width="108.66666666666666" height="36.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's free and always will be!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ta-eq-NYA">
                                                 <rect key="frame" x="20" y="270" width="353" height="23.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
@@ -151,6 +157,35 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ4-Zd-IZL">
+                                                <rect key="frame" x="20" y="645" width="353" height="13"/>
+                                                <gestureRecognizers/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="By signing up you are accepting all ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="terms and conditions">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" of App.">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy4-FU-ojZ">
                                                 <rect key="frame" x="114" y="698" width="165" height="50"/>
                                                 <color key="backgroundColor" red="0.47058826679999999" green="0.47450977560000002" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -201,45 +236,30 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ4-Zd-IZL">
-                                                <rect key="frame" x="20" y="645" width="353" height="13"/>
-                                                <gestureRecognizers/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="By signing up you are accepting all ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="terms and conditions">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            <integer key="NSUnderline" value="1"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" of App.">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm0-Rw-Y75">
-                                                <rect key="frame" x="142.33333333333334" y="110.00000000000001" width="108.66666666666666" height="36.666666666666671"/>
-                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-gO-w7j">
+                                                <rect key="frame" x="30" y="50" width="66.333333333333329" height="36"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Back">
+                                                            <attributes>
+                                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backBtnTapped:" destination="mjV-Fo-ahz" eventType="touchUpInside" id="rJl-FP-KEA"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="vQ4-Zd-IZL" firstAttribute="trailing" secondItem="hl9-on-DeZ" secondAttribute="trailing" id="0Nd-E8-jh7"/>
+                                            <constraint firstItem="lEQ-gO-w7j" firstAttribute="top" secondItem="UxC-ov-aQZ" secondAttribute="top" constant="50" id="1Id-R4-lBj"/>
+                                            <constraint firstItem="lEQ-gO-w7j" firstAttribute="leading" secondItem="UxC-ov-aQZ" secondAttribute="leading" constant="30" id="1zV-dv-qa6"/>
                                             <constraint firstItem="kBD-1e-XSz" firstAttribute="centerX" secondItem="UxC-ov-aQZ" secondAttribute="centerX" id="55r-XV-Djz"/>
                                             <constraint firstItem="hl9-on-DeZ" firstAttribute="leading" secondItem="2ta-eq-NYA" secondAttribute="leading" id="64C-OT-IJB"/>
                                             <constraint firstItem="hl9-on-DeZ" firstAttribute="trailing" secondItem="2ta-eq-NYA" secondAttribute="trailing" id="6PW-uI-sT9"/>
@@ -279,12 +299,15 @@
                         <viewLayoutGuide key="safeArea" id="V83-32-wMz"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gnM-zd-jYz" firstAttribute="trailing" secondItem="V83-32-wMz" secondAttribute="trailing" id="EwV-ZH-Bjw"/>
-                            <constraint firstItem="gnM-zd-jYz" firstAttribute="leading" secondItem="V83-32-wMz" secondAttribute="leading" id="Hww-M1-Rlu"/>
+                            <constraint firstItem="gnM-zd-jYz" firstAttribute="trailing" secondItem="ylI-di-Dtf" secondAttribute="trailing" id="EwV-ZH-Bjw"/>
+                            <constraint firstAttribute="leading" secondItem="gnM-zd-jYz" secondAttribute="leading" id="Hww-M1-Rlu"/>
                             <constraint firstItem="gnM-zd-jYz" firstAttribute="top" secondItem="ylI-di-Dtf" secondAttribute="top" id="N0G-c2-19E"/>
                             <constraint firstAttribute="bottom" secondItem="gnM-zd-jYz" secondAttribute="bottom" id="oeY-5V-deY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jYQ-Vk-b4D" id="vNr-XK-JwW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBI-7P-FNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

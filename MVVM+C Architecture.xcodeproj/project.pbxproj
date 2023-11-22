@@ -16,6 +16,15 @@
 		4D0A88CE2B0B89B900AAADDE /* SignupViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88CD2B0B89B900AAADDE /* SignupViewModelProtocol.swift */; };
 		4D0A88D02B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88CF2B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift */; };
 		4D0A88D22B0B89D300AAADDE /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88D12B0B89D300AAADDE /* SignupCoordinator.swift */; };
+		4D0A88D92B0B967200AAADDE /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A88D82B0B967200AAADDE /* Splash.storyboard */; };
+		4D0A88DB2B0B968000AAADDE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88DA2B0B968000AAADDE /* SplashViewController.swift */; };
+		4D0A88DD2B0B968D00AAADDE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88DC2B0B968D00AAADDE /* SplashViewModel.swift */; };
+		4D0A88DF2B0B969C00AAADDE /* SplashViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88DE2B0B969C00AAADDE /* SplashViewModelProtocol.swift */; };
+		4D0A88E12B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88E02B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift */; };
+		4D0A88E32B0B96BB00AAADDE /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88E22B0B96BB00AAADDE /* SplashCoordinator.swift */; };
+		4D0A88E72B0CF93F00AAADDE /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88E52B0CF93F00AAADDE /* SlideCell.swift */; };
+		4D0A88E82B0CF93F00AAADDE /* SlideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A88E62B0CF93F00AAADDE /* SlideCell.xib */; };
+		4D0A88ED2B0CFEE900AAADDE /* SlideDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A88EC2B0CFEE900AAADDE /* SlideDataSource.swift */; };
 		4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74A42B062C1500B1E789 /* AppDelegate.swift */; };
 		4D6D74A72B062C1500B1E789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74A62B062C1500B1E789 /* SceneDelegate.swift */; };
 		4D6D74AE2B062C1600B1E789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D74AD2B062C1600B1E789 /* Assets.xcassets */; };
@@ -48,6 +57,15 @@
 		4D0A88CD2B0B89B900AAADDE /* SignupViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModelProtocol.swift; sourceTree = "<group>"; };
 		4D0A88CF2B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		4D0A88D12B0B89D300AAADDE /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		4D0A88D82B0B967200AAADDE /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		4D0A88DA2B0B968000AAADDE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4D0A88DC2B0B968D00AAADDE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		4D0A88DE2B0B969C00AAADDE /* SplashViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelProtocol.swift; sourceTree = "<group>"; };
+		4D0A88E02B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelCoordinatoDelegate.swift; sourceTree = "<group>"; };
+		4D0A88E22B0B96BB00AAADDE /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		4D0A88E52B0CF93F00AAADDE /* SlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
+		4D0A88E62B0CF93F00AAADDE /* SlideCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCell.xib; sourceTree = "<group>"; };
+		4D0A88EC2B0CFEE900AAADDE /* SlideDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideDataSource.swift; sourceTree = "<group>"; };
 		4D6D74A12B062C1500B1E789 /* MVVM+C Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+C Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6D74A42B062C1500B1E789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D6D74A62B062C1500B1E789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +126,68 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		4D0A88D32B0B961F00AAADDE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88D72B0B964700AAADDE /* Coordinator */,
+				4D0A88D62B0B964300AAADDE /* Protocols */,
+				4D0A88D52B0B964100AAADDE /* ViewModel */,
+				4D0A88D42B0B962C00AAADDE /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		4D0A88D42B0B962C00AAADDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88D82B0B967200AAADDE /* Splash.storyboard */,
+				4D0A88DA2B0B968000AAADDE /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D0A88D52B0B964100AAADDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88DC2B0B968D00AAADDE /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D0A88D62B0B964300AAADDE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88DE2B0B969C00AAADDE /* SplashViewModelProtocol.swift */,
+				4D0A88E02B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4D0A88D72B0B964700AAADDE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88E22B0B96BB00AAADDE /* SplashCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4D0A88E42B0CF8E100AAADDE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88E52B0CF93F00AAADDE /* SlideCell.swift */,
+				4D0A88E62B0CF93F00AAADDE /* SlideCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4D0A88EB2B0CFEA700AAADDE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A88EC2B0CFEE900AAADDE /* SlideDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		4D6D74982B062C1500B1E789 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +211,7 @@
 				4D6D74E02B0637BD00B1E789 /* Signup */,
 				4D6D74B92B062C2700B1E789 /* Login */,
 				4D6D74B82B062C2100B1E789 /* Intro */,
+				4D0A88D32B0B961F00AAADDE /* Splash */,
 				4D6D74DD2B06330900B1E789 /* Extension */,
 				4D6D74EC2B06466400B1E789 /* Base */,
 				4D6D74A42B062C1500B1E789 /* AppDelegate.swift */,
@@ -167,6 +248,8 @@
 		4D6D74BB2B062C4D00B1E789 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4D0A88EB2B0CFEA700AAADDE /* DataSource */,
+				4D0A88E42B0CF8E100AAADDE /* Cell */,
 				4D6D74C52B062CD600B1E789 /* IntroViewController.swift */,
 				4D6D74C72B062CE900B1E789 /* Intro.storyboard */,
 			);
@@ -341,8 +424,10 @@
 				4D6D74B12B062C1600B1E789 /* LaunchScreen.storyboard in Resources */,
 				4D6D74AE2B062C1600B1E789 /* Assets.xcassets in Resources */,
 				4D6D74CC2B062D1000B1E789 /* Login.storyboard in Resources */,
+				4D0A88E82B0CF93F00AAADDE /* SlideCell.xib in Resources */,
 				4D6D74E52B0637F400B1E789 /* Signup.storyboard in Resources */,
 				4D6D74C82B062CE900B1E789 /* Intro.storyboard in Resources */,
+				4D0A88D92B0B967200AAADDE /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,19 +445,26 @@
 				4D6D74C62B062CD600B1E789 /* IntroViewController.swift in Sources */,
 				4D6D74D72B062F0500B1E789 /* IntroModel.swift in Sources */,
 				4D6D74D42B062D5200B1E789 /* LoginCoordinator.swift in Sources */,
+				4D0A88ED2B0CFEE900AAADDE /* SlideDataSource.swift in Sources */,
+				4D0A88E72B0CF93F00AAADDE /* SlideCell.swift in Sources */,
 				4D6D74D22B062D4400B1E789 /* IntroCoordinator.swift in Sources */,
 				4D0A88CE2B0B89B900AAADDE /* SignupViewModelProtocol.swift in Sources */,
+				4D0A88DB2B0B968000AAADDE /* SplashViewController.swift in Sources */,
 				4D6D74C42B062CB400B1E789 /* AppCoordinator.swift in Sources */,
 				4D6D74DF2B06332500B1E789 /* UIView+Extension.swift in Sources */,
 				4D0A88BF2B09614100AAADDE /* Storyboarded.swift in Sources */,
 				4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */,
+				4D0A88E12B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift in Sources */,
 				4D0A88D22B0B89D300AAADDE /* SignupCoordinator.swift in Sources */,
 				4D6D74E92B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88D02B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift in Sources */,
 				4D6D74CE2B062D2300B1E789 /* IntroViewModel.swift in Sources */,
 				4D6D74D02B062D3200B1E789 /* LoginViewModel.swift in Sources */,
 				4D0A88C52B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift in Sources */,
+				4D0A88DF2B0B969C00AAADDE /* SplashViewModelProtocol.swift in Sources */,
+				4D0A88E32B0B96BB00AAADDE /* SplashCoordinator.swift in Sources */,
 				4D6D74E32B0637E900B1E789 /* SignupViewController.swift in Sources */,
+				4D0A88DD2B0B968D00AAADDE /* SplashViewModel.swift in Sources */,
 				4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */,
 				4D0A88C72B0B63BC00AAADDE /* BaseViewModel.swift in Sources */,
 				4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */,

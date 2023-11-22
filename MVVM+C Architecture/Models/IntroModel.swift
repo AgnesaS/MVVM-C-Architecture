@@ -7,8 +7,6 @@
 
 import UIKit
 
-struct IntroScreenModel {
-    let title: String
-    let description: String
-    let image: UIImage
+struct IntroModel {
+    let image: UIImage?
 }

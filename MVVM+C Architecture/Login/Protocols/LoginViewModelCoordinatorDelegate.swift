@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoginViewModelCoordinatorDelegate: AnyObject {
-   
+   func showSignup()
 }

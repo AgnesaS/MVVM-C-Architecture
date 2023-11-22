@@ -4,6 +4,7 @@
 //
 //  Created by Agnesa  on 16.11.23.
 //
+import Foundation
 
 protocol IntroViewModelProtocol: BaseViewModel {
     var coordinatorDelegate: IntroViewModelCoordinatorDelegate? { get set }

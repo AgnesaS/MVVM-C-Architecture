@@ -9,11 +9,10 @@ import Foundation
 
 class IntroViewModel: IntroViewModelProtocol {
     weak var coordinatorDelegate: IntroViewModelCoordinatorDelegate?
-
+    
     func loginTapped() {
         coordinatorDelegate?.showLoginScreen()
     }
-
     func signupTapped(){
         coordinatorDelegate?.showSignupScreen()
     }

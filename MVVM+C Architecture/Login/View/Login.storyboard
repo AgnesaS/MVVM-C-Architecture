@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="56A-Ko-XJM">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="56A-Ko-XJM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-Mb-3VP">
@@ -44,6 +44,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctv-fy-pIw">
+                                                <rect key="frame" x="30" y="50" width="66.333333333333329" height="36"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backBtnTapped:" destination="GK8-EC-Bte" eventType="touchUpInside" id="aWW-L5-ceg"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUB-mN-Kc3">
+                                                <rect key="frame" x="157.66666666666666" y="110.00000000000001" width="78" height="36.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's free and always will be!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmz-s9-gVG">
                                                 <rect key="frame" x="20" y="270" width="353" height="23.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
@@ -51,10 +68,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-xo-0OY">
-                                                <rect key="frame" x="20" y="343.33333333333331" width="353" height="136.66666666666669"/>
+                                                <rect key="frame" x="20" y="343.33333333333331" width="353" height="143.33333333333331"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tg0-8s-gkV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="61.666666666666664"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
@@ -78,7 +95,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-Wn-d6c">
-                                                        <rect key="frame" x="0.0" y="78.333333333333371" width="353" height="58.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="81.666666666666686" width="353" height="61.666666666666657"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
@@ -103,6 +120,23 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fts-ai-IMr">
+                                                <rect key="frame" x="20" y="516.66666666666663" width="353" height="16.333333333333371"/>
+                                                <gestureRecognizers/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Forgot Password?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="aKB-UY-nx0" appends="YES" id="71k-ae-j3f"/>
+                                                </connections>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhY-Pr-WVM">
                                                 <rect key="frame" x="114" y="593" width="165" height="50"/>
                                                 <color key="backgroundColor" red="0.47058826679999999" green="0.47450977560000002" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -150,62 +184,32 @@
                                                         <state key="normal" title="Signup">
                                                             <color key="titleColor" red="0.47058826679999999" green="0.47450977560000002" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signupBtnTapped:" destination="GK8-EC-Bte" eventType="touchUpInside" id="Zzf-Wa-uBc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fts-ai-IMr">
-                                                <rect key="frame" x="20" y="540" width="353" height="13"/>
-                                                <gestureRecognizers/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="By signing up you are accepting all ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="terms and conditions">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            <integer key="NSUnderline" value="1"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" of App.">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.14902000000000001" green="0.14902000000000001" blue="0.14902000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUB-mN-Kc3">
-                                                <rect key="frame" x="157.66666666666666" y="110.00000000000001" width="78" height="36.666666666666671"/>
-                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="9MH-xo-0OY" firstAttribute="trailing" secondItem="Qmz-s9-gVG" secondAttribute="trailing" id="3ma-3S-AJ4"/>
                                             <constraint firstItem="9MH-xo-0OY" firstAttribute="centerX" secondItem="OaH-Mb-3VP" secondAttribute="centerX" id="89x-wt-YO9"/>
                                             <constraint firstItem="9MH-xo-0OY" firstAttribute="centerX" secondItem="Qmz-s9-gVG" secondAttribute="centerX" id="8YS-T1-TEi"/>
-                                            <constraint firstItem="VhY-Pr-WVM" firstAttribute="top" secondItem="fts-ai-IMr" secondAttribute="bottom" constant="40" id="9XL-At-UbB"/>
+                                            <constraint firstItem="VhY-Pr-WVM" firstAttribute="top" secondItem="fts-ai-IMr" secondAttribute="bottom" constant="60" id="9XL-At-UbB"/>
+                                            <constraint firstItem="Ctv-fy-pIw" firstAttribute="top" secondItem="OaH-Mb-3VP" secondAttribute="top" constant="50" id="9r2-eN-t5v"/>
                                             <constraint firstItem="Qmz-s9-gVG" firstAttribute="centerX" secondItem="OaH-Mb-3VP" secondAttribute="centerX" id="B6I-22-vaM"/>
                                             <constraint firstItem="9MH-xo-0OY" firstAttribute="leading" secondItem="OaH-Mb-3VP" secondAttribute="leading" constant="20" id="BRk-3B-2Kp"/>
                                             <constraint firstItem="cUB-mN-Kc3" firstAttribute="centerX" secondItem="OaH-Mb-3VP" secondAttribute="centerX" id="Bmi-h8-Ycm"/>
                                             <constraint firstItem="9MH-xo-0OY" firstAttribute="leading" secondItem="Qmz-s9-gVG" secondAttribute="leading" id="FbI-cW-K6r"/>
-                                            <constraint firstItem="OUn-a8-4wW" firstAttribute="top" secondItem="OaH-Mb-3VP" secondAttribute="top" id="IC4-nG-BnH"/>
+                                            <constraint firstAttribute="top" secondItem="OUn-a8-4wW" secondAttribute="top" id="IC4-nG-BnH"/>
                                             <constraint firstAttribute="bottom" secondItem="4Jx-PZ-TsP" secondAttribute="bottom" constant="140" id="KuC-qD-GKW"/>
                                             <constraint firstItem="VhY-Pr-WVM" firstAttribute="centerX" secondItem="OaH-Mb-3VP" secondAttribute="centerX" id="NkR-Qk-Vax"/>
                                             <constraint firstItem="4Jx-PZ-TsP" firstAttribute="centerX" secondItem="OaH-Mb-3VP" secondAttribute="centerX" id="Q9l-YU-lY0"/>
+                                            <constraint firstItem="Ctv-fy-pIw" firstAttribute="leading" secondItem="OaH-Mb-3VP" secondAttribute="leading" constant="30" id="Qp1-8d-ezp"/>
                                             <constraint firstItem="9MH-xo-0OY" firstAttribute="top" secondItem="Qmz-s9-gVG" secondAttribute="bottom" constant="50" id="REa-xC-pnV"/>
                                             <constraint firstItem="fts-ai-IMr" firstAttribute="trailing" secondItem="9MH-xo-0OY" secondAttribute="trailing" id="RyQ-Vo-fca"/>
-                                            <constraint firstItem="fts-ai-IMr" firstAttribute="top" secondItem="9MH-xo-0OY" secondAttribute="bottom" constant="60" id="aCG-xD-zWb"/>
+                                            <constraint firstItem="fts-ai-IMr" firstAttribute="top" secondItem="9MH-xo-0OY" secondAttribute="bottom" constant="30" id="aCG-xD-zWb"/>
                                             <constraint firstItem="4Jx-PZ-TsP" firstAttribute="top" secondItem="VhY-Pr-WVM" secondAttribute="bottom" constant="30" id="bpE-An-yTc"/>
                                             <constraint firstItem="fts-ai-IMr" firstAttribute="leading" secondItem="OaH-Mb-3VP" secondAttribute="leading" constant="20" id="c32-CR-dBl"/>
                                             <constraint firstAttribute="trailing" secondItem="fts-ai-IMr" secondAttribute="trailing" constant="20" id="cc3-Yp-c0s"/>
@@ -231,14 +235,22 @@
                         <viewLayoutGuide key="safeArea" id="FTi-8E-FRB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="56A-Ko-XJM" firstAttribute="leading" secondItem="FTi-8E-FRB" secondAttribute="leading" id="DPE-Sj-5Xq"/>
-                            <constraint firstItem="56A-Ko-XJM" firstAttribute="trailing" secondItem="FTi-8E-FRB" secondAttribute="trailing" id="DvE-gJ-2wj"/>
+                            <constraint firstAttribute="leading" secondItem="56A-Ko-XJM" secondAttribute="leading" id="DPE-Sj-5Xq"/>
+                            <constraint firstItem="56A-Ko-XJM" firstAttribute="trailing" secondItem="giC-GX-2ND" secondAttribute="trailing" id="DvE-gJ-2wj"/>
                             <constraint firstAttribute="bottom" secondItem="56A-Ko-XJM" secondAttribute="bottom" id="P3i-cR-Kuf"/>
                             <constraint firstItem="56A-Ko-XJM" firstAttribute="top" secondItem="giC-GX-2ND" secondAttribute="top" id="cra-Ri-jHq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="OUn-a8-4wW" id="LhW-a8-Xwg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1F6-L8-Ly9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aKB-UY-nx0">
+                    <connections>
+                        <action selector="forgotPassBtnTapped:" destination="GK8-EC-Bte" id="cEW-T3-jCe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1596" y="656"/>
         </scene>

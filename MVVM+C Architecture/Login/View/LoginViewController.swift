@@ -8,27 +8,25 @@
 import UIKit
 
 class LoginViewController: UIViewController, Storyboarded {
-    
+    //MARK: - Properties
     var viewModel: LoginViewModelProtocol?
     var coordinator: LoginCoordinator?
-
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    //    imageView.roundBottomCorners()
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  //MARK: - IBActions
+    @IBAction func backBtnTapped(_ sender: Any) {
+        self.coordinator?.stop()
     }
-    */
-
+    @IBAction func forgotPassBtnTapped(_ sender: Any) {
+    }
+    @IBAction func signupBtnTapped(_ sender: Any) {
+        self.viewModel?.showSignup()
+    }
 }
 extension LoginViewController : Coordinated {
     func getCoordinator() -> Coordinator? {
