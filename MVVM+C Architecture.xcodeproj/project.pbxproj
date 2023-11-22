@@ -45,6 +45,8 @@
 		4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */; };
 		4D6D74E92B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */; };
 		4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74EA2B06416E00B1E789 /* Coordinator.swift */; };
+		4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */; };
+		4DEBF9282B0E336A00F1A858 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEBF9272B0E336A00F1A858 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelProtocol.swift; sourceTree = "<group>"; };
 		4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		4D6D74EA2B06416E00B1E789 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4DEBF9272B0E336A00F1A858 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6D74D52B062EF400B1E789 /* Models */,
+				4DEBF9202B0E330400F1A858 /* Home */,
 				4D6D74E02B0637BD00B1E789 /* Signup */,
 				4D6D74B92B062C2700B1E789 /* Login */,
 				4D6D74B82B062C2100B1E789 /* Intro */,
@@ -363,6 +368,47 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		4DEBF9202B0E330400F1A858 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4DEBF9242B0E332100F1A858 /* Coordinator */,
+				4DEBF9232B0E331E00F1A858 /* Protocols */,
+				4DEBF9222B0E331C00F1A858 /* ViewModel */,
+				4DEBF9212B0E331A00F1A858 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4DEBF9212B0E331A00F1A858 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */,
+				4DEBF9272B0E336A00F1A858 /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DEBF9222B0E331C00F1A858 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DEBF9232B0E331E00F1A858 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4DEBF9242B0E332100F1A858 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,6 +474,7 @@
 				4D6D74E52B0637F400B1E789 /* Signup.storyboard in Resources */,
 				4D6D74C82B062CE900B1E789 /* Intro.storyboard in Resources */,
 				4D0A88D92B0B967200AAADDE /* Splash.storyboard in Resources */,
+				4DEBF9282B0E336A00F1A858 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +512,7 @@
 				4D0A88E32B0B96BB00AAADDE /* SplashCoordinator.swift in Sources */,
 				4D6D74E32B0637E900B1E789 /* SignupViewController.swift in Sources */,
 				4D0A88DD2B0B968D00AAADDE /* SplashViewModel.swift in Sources */,
+				4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */,
 				4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */,
 				4D0A88C72B0B63BC00AAADDE /* BaseViewModel.swift in Sources */,
 				4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */,

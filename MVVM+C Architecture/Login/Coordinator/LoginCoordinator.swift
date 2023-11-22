@@ -7,17 +7,14 @@
 
 import Foundation
 import UIKit
-protocol LoginCoordinatorDelegate: class{
-    func showSignup()
-}
 
 class LoginCoordinator: PushCoordinator{
     var configuration: ((LoginViewController) -> ())?
     var viewController : LoginViewController?
     var navigationController: UINavigationController?
     var viewModel : LoginViewModelProtocol
-    var signup : SignupCoordinator?
-    var coordinatorDelegate: LoginCoordinatorDelegate?
+    var signupCoordinator : SignupCoordinator?
+
     
     init(viewModel: LoginViewModelProtocol, navigationController:UINavigationController?) {
         self.viewModel = viewModel
@@ -28,8 +25,9 @@ class LoginCoordinator: PushCoordinator{
     }
 }
 extension LoginCoordinator: LoginViewModelCoordinatorDelegate{
-    func showSignup(){
-        self.coordinatorDelegate?.showSignup()
+    func showSignupScreen() {
+        signupCoordinator = SignupCoordinator(viewModel: SignupViewModel(), navigationController: self.viewController?.navigationController)
+        signupCoordinator?.start()
     }
 }
 

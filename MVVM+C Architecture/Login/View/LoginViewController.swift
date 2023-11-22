@@ -14,9 +14,7 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-       imageView.roundBottomCorners()
-        
+        super.viewDidLoad()        
     }
   //MARK: - IBActions
     @IBAction func backBtnTapped(_ sender: Any) {
@@ -26,6 +24,7 @@ class LoginViewController: UIViewController, Storyboarded {
     }
     @IBAction func signupBtnTapped(_ sender: Any) {
         self.viewModel?.showSignup()
+        print("Signup")
     }
 }
 extension LoginViewController : Coordinated {

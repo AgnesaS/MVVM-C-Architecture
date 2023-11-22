@@ -59,9 +59,4 @@ extension AppCoordinator: SplashCoordinatorDelegate {
         self.initializeIntro()
     }
 }
-extension AppCoordinator: LoginCoordinatorDelegate {
-    func showSignup() {
-        self.loginCoordinator = nil
-        self.initializeSignup()
-    }
-}
+
