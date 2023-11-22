@@ -9,4 +9,7 @@ import Foundation
 
 class SignupViewModel: SignupViewModelProtocol{
     weak var coordinatorDelegate: SignupViewModelCoordinatorDelegate?
+    func showLogin() {
+        self.coordinatorDelegate?.showLogin()
+    }
 }

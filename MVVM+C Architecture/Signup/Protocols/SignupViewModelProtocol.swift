@@ -9,4 +9,5 @@ import Foundation
 
 protocol SignupViewModelProtocol: BaseViewModel{
     var coordinatorDelegate : SignupViewModelCoordinatorDelegate? {get set}
+    func showLogin()
 }

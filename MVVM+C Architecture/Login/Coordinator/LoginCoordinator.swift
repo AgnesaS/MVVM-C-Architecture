@@ -25,7 +25,7 @@ class LoginCoordinator: PushCoordinator{
     }
 }
 extension LoginCoordinator: LoginViewModelCoordinatorDelegate{
-    func showSignupScreen() {
+    func showSignup() {
         signupCoordinator = SignupCoordinator(viewModel: SignupViewModel(), navigationController: self.viewController?.navigationController)
         signupCoordinator?.start()
     }

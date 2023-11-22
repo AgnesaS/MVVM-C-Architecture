@@ -21,6 +21,9 @@ class SignupViewController: UIViewController, Storyboarded {
     @IBAction func backBtnTapped(_ sender: Any) {
         self.coordinator?.stop()
     }
+    @IBAction func loginBtnTapped(_ sender: Any) {
+        self.viewModel?.showLogin()
+    }
 }
 extension SignupViewController: Coordinated {
     func getCoordinator() -> Coordinator? {

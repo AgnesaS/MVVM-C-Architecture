@@ -233,6 +233,9 @@
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" red="0.47058826679999999" green="0.47450977560000002" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginBtnTapped:" destination="mjV-Fo-ahz" eventType="touchUpInside" id="G2d-09-mdK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

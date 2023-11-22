@@ -11,7 +11,7 @@ class LoginViewModel: LoginViewModelProtocol {
     weak var coordinatorDelegate: LoginViewModelCoordinatorDelegate?
     
     func showSignup() {
-        coordinatorDelegate?.showSignupScreen()
+        coordinatorDelegate?.showSignup()
     }
     
    
