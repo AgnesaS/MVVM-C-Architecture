@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController, Storyboarded {
 
+    var viewModel: HomeViewModelProtocol?
+    var coordinator: HomeCoordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +28,13 @@ class HomeViewController: UIViewController, Storyboarded {
     }
     */
 
+}
+
+extension HomeViewController: Coordinated {
+    func getCoordinator() -> Coordinator? {
+        return coordinator
+    }
+    func setCoordinator(_ coordinator: Coordinator) {
+        self.coordinator = coordinator as? HomeCoordinator
+    }
 }

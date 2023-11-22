@@ -47,6 +47,10 @@
 		4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74EA2B06416E00B1E789 /* Coordinator.swift */; };
 		4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */; };
 		4DEBF9282B0E336A00F1A858 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEBF9272B0E336A00F1A858 /* Home.storyboard */; };
+		4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */; };
+		4DEBF92C2B0E39A600F1A858 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF92B2B0E39A600F1A858 /* HomeViewModelProtocol.swift */; };
+		4DEBF92E2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF92D2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift */; };
+		4DEBF9302B0E39CB00F1A858 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF92F2B0E39CB00F1A858 /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +96,10 @@
 		4D6D74EA2B06416E00B1E789 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4DEBF9272B0E336A00F1A858 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4DEBF92B2B0E39A600F1A858 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		4DEBF92D2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		4DEBF92F2B0E39CB00F1A858 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +399,7 @@
 		4DEBF9222B0E331C00F1A858 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -398,6 +407,8 @@
 		4DEBF9232B0E331E00F1A858 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				4DEBF92B2B0E39A600F1A858 /* HomeViewModelProtocol.swift */,
+				4DEBF92D2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -405,6 +416,7 @@
 		4DEBF9242B0E332100F1A858 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				4DEBF92F2B0E39CB00F1A858 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -486,11 +498,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */,
+				4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */,
+				4DEBF92E2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88C32B0964DD00AAADDE /* LoginViewModelProtocol.swift in Sources */,
 				4D6D74CA2B062D0500B1E789 /* LoginViewController.swift in Sources */,
 				4D0A88CC2B0B897F00AAADDE /* SignupViewModel.swift in Sources */,
 				4D6D74C62B062CD600B1E789 /* IntroViewController.swift in Sources */,
 				4D6D74D72B062F0500B1E789 /* IntroModel.swift in Sources */,
+				4DEBF92C2B0E39A600F1A858 /* HomeViewModelProtocol.swift in Sources */,
 				4D6D74D42B062D5200B1E789 /* LoginCoordinator.swift in Sources */,
 				4D0A88ED2B0CFEE900AAADDE /* SlideDataSource.swift in Sources */,
 				4D0A88E72B0CF93F00AAADDE /* SlideCell.swift in Sources */,
@@ -511,6 +526,7 @@
 				4D0A88DF2B0B969C00AAADDE /* SplashViewModelProtocol.swift in Sources */,
 				4D0A88E32B0B96BB00AAADDE /* SplashCoordinator.swift in Sources */,
 				4D6D74E32B0637E900B1E789 /* SignupViewController.swift in Sources */,
+				4DEBF9302B0E39CB00F1A858 /* HomeCoordinator.swift in Sources */,
 				4D0A88DD2B0B968D00AAADDE /* SplashViewModel.swift in Sources */,
 				4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */,
 				4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */,

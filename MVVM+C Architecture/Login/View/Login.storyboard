@@ -165,6 +165,9 @@
                                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginBtnTapped:" destination="GK8-EC-Bte" eventType="touchUpInside" id="yjW-fl-f2g"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Jx-PZ-TsP">
                                                 <rect key="frame" x="111" y="673" width="171" height="30"/>

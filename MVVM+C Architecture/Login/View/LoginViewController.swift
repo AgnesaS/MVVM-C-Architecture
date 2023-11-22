@@ -22,6 +22,9 @@ class LoginViewController: UIViewController, Storyboarded {
     }
     @IBAction func forgotPassBtnTapped(_ sender: Any) {
     }
+    @IBAction func loginBtnTapped(_ sender: Any) {
+        self.viewModel?.showHome()
+    }
     @IBAction func signupBtnTapped(_ sender: Any) {
         self.viewModel?.showSignup()
         print("Signup")

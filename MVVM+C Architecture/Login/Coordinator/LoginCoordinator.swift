@@ -14,6 +14,7 @@ class LoginCoordinator: PushCoordinator{
     var navigationController: UINavigationController?
     var viewModel : LoginViewModelProtocol
     var signupCoordinator : SignupCoordinator?
+    var homeCoordinator: HomeCoordinator?
 
     
     init(viewModel: LoginViewModelProtocol, navigationController:UINavigationController?) {
@@ -25,6 +26,11 @@ class LoginCoordinator: PushCoordinator{
     }
 }
 extension LoginCoordinator: LoginViewModelCoordinatorDelegate{
+    func showHome() {
+        homeCoordinator = HomeCoordinator(viewModel: HomeViewModel(), navigationController: self.viewController?.navigationController)
+        homeCoordinator?.start()
+    }
+    
     func showSignup() {
         signupCoordinator = SignupCoordinator(viewModel: SignupViewModel(), navigationController: self.viewController?.navigationController)
         signupCoordinator?.start()
