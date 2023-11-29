@@ -32,6 +32,9 @@ extension UIStoryboard {
     static var home: UIStoryboard {
         return UIStoryboard(name: "Home", bundle: nil)
     }
+    static var homeDetails: UIStoryboard {
+        return UIStoryboard(name: "HomeDetails", bundle: nil)
+    }
   
 
  

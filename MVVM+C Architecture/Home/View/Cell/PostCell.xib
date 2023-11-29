@@ -17,48 +17,54 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="3mo-FQ-CWU">
-                        <rect key="frame" x="0.0" y="0.0" width="326" height="140"/>
+                        <rect key="frame" x="10" y="0.0" width="316" height="140"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQp-tI-pyG">
-                                <rect key="frame" x="0.0" y="57.000000000000007" width="94" height="26.333333333333336"/>
+                                <rect key="frame" x="0.0" y="57.000000000000007" width="90.666666666666671" height="26.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Etq-Mc-3XK">
-                                <rect key="frame" x="116" y="47.666666666666657" width="94" height="45"/>
+                                <rect key="frame" x="112.66666666666666" y="47.666666666666657" width="90.666666666666657" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="zKd-wz-alh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADw-1U-0fb">
-                                <rect key="frame" x="232" y="57.000000000000007" width="94" height="26.333333333333336"/>
+                                <rect key="frame" x="225.33333333333334" y="57.000000000000007" width="90.666666666666657" height="26.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </stackView>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="3mo-FQ-CWU" firstAttribute="top" secondItem="mDL-mN-ev1" secondAttribute="top" id="DzY-9L-H2W"/>
                     <constraint firstAttribute="trailing" secondItem="3mo-FQ-CWU" secondAttribute="trailing" id="FHn-Wk-pGP"/>
-                    <constraint firstItem="3mo-FQ-CWU" firstAttribute="leading" secondItem="mDL-mN-ev1" secondAttribute="leading" id="Z5p-pP-ULn"/>
+                    <constraint firstItem="3mo-FQ-CWU" firstAttribute="leading" secondItem="mDL-mN-ev1" secondAttribute="leading" constant="10" id="Z5p-pP-ULn"/>
                     <constraint firstAttribute="bottom" secondItem="3mo-FQ-CWU" secondAttribute="bottom" id="epZ-Cj-U93"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                        <real key="value" value="2"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="vtz-7V-JAV"/>
-            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.47058823529999999" green="0.47450980390000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                    <real key="value" value="2"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                    <real key="value" value="10"/>
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>

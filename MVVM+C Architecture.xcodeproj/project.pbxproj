@@ -51,6 +51,12 @@
 		4DC49F5B2B0E75570008C9B6 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC49F592B0E75570008C9B6 /* PostCell.xib */; };
 		4DC49F5D2B0E776C0008C9B6 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC49F5C2B0E776C0008C9B6 /* PostModel.swift */; };
 		4DC49F602B0E79280008C9B6 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC49F5F2B0E79280008C9B6 /* PostRequest.swift */; };
+		4DCEB9DC2B176C1C0058D256 /* HomeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9DB2B176C1C0058D256 /* HomeDetailsViewController.swift */; };
+		4DCEB9DE2B176C2A0058D256 /* HomeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCEB9DD2B176C2A0058D256 /* HomeDetails.storyboard */; };
+		4DCEB9E02B176C440058D256 /* HomeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9DF2B176C440058D256 /* HomeDetailsViewModel.swift */; };
+		4DCEB9E22B176C560058D256 /* HomeDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9E12B176C560058D256 /* HomeDetailsViewModelProtocol.swift */; };
+		4DCEB9E42B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9E32B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift */; };
+		4DCEB9E62B176CAF0058D256 /* HomeDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9E52B176CAF0058D256 /* HomeDetailsCoordinator.swift */; };
 		4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */; };
 		4DEBF9282B0E336A00F1A858 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEBF9272B0E336A00F1A858 /* Home.storyboard */; };
 		4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */; };
@@ -107,6 +113,12 @@
 		4DC49F592B0E75570008C9B6 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		4DC49F5C2B0E776C0008C9B6 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		4DC49F5F2B0E79280008C9B6 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		4DCEB9DB2B176C1C0058D256 /* HomeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewController.swift; sourceTree = "<group>"; };
+		4DCEB9DD2B176C2A0058D256 /* HomeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetails.storyboard; sourceTree = "<group>"; };
+		4DCEB9DF2B176C440058D256 /* HomeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DCEB9E12B176C560058D256 /* HomeDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		4DCEB9E32B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		4DCEB9E52B176CAF0058D256 /* HomeDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsCoordinator.swift; sourceTree = "<group>"; };
 		4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4DEBF9272B0E336A00F1A858 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -249,6 +261,7 @@
 			children = (
 				4DC49F5E2B0E79080008C9B6 /* NetworkLayer */,
 				4D6D74D52B062EF400B1E789 /* Models */,
+				4DCEB9D62B176BC70058D256 /* HomeDetails */,
 				4DEBF9202B0E330400F1A858 /* Home */,
 				4D6D74E02B0637BD00B1E789 /* Signup */,
 				4D6D74B92B062C2700B1E789 /* Login */,
@@ -425,6 +438,51 @@
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
+		4DCEB9D62B176BC70058D256 /* HomeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEB9DA2B176BDB0058D256 /* Coordinator */,
+				4DCEB9D92B176BD80058D256 /* Protocols */,
+				4DCEB9D82B176BD60058D256 /* ViewModel */,
+				4DCEB9D72B176BD40058D256 /* View */,
+			);
+			path = HomeDetails;
+			sourceTree = "<group>";
+		};
+		4DCEB9D72B176BD40058D256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEB9DB2B176C1C0058D256 /* HomeDetailsViewController.swift */,
+				4DCEB9DD2B176C2A0058D256 /* HomeDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DCEB9D82B176BD60058D256 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEB9DF2B176C440058D256 /* HomeDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DCEB9D92B176BD80058D256 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEB9E12B176C560058D256 /* HomeDetailsViewModelProtocol.swift */,
+				4DCEB9E32B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4DCEB9DA2B176BDB0058D256 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEB9E52B176CAF0058D256 /* HomeDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		4DEBF9202B0E330400F1A858 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +601,7 @@
 				4D6D74AE2B062C1600B1E789 /* Assets.xcassets in Resources */,
 				4D6D74CC2B062D1000B1E789 /* Login.storyboard in Resources */,
 				4D0A88E82B0CF93F00AAADDE /* SlideCell.xib in Resources */,
+				4DCEB9DE2B176C2A0058D256 /* HomeDetails.storyboard in Resources */,
 				4D1C85C52B161B4500C17919 /* WeatherCell.xib in Resources */,
 				4DC49F5B2B0E75570008C9B6 /* PostCell.xib in Resources */,
 				4D6D74E52B0637F400B1E789 /* Signup.storyboard in Resources */,
@@ -601,9 +660,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCEB9E22B176C560058D256 /* HomeDetailsViewModelProtocol.swift in Sources */,
 				4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */,
 				4DC49F602B0E79280008C9B6 /* PostRequest.swift in Sources */,
 				4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */,
+				4DCEB9E62B176CAF0058D256 /* HomeDetailsCoordinator.swift in Sources */,
 				4DEBF92E2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88C32B0964DD00AAADDE /* LoginViewModelProtocol.swift in Sources */,
 				4D6D74CA2B062D0500B1E789 /* LoginViewController.swift in Sources */,
@@ -621,6 +682,7 @@
 				4D6D74C42B062CB400B1E789 /* AppCoordinator.swift in Sources */,
 				4D6D74DF2B06332500B1E789 /* UIView+Extension.swift in Sources */,
 				4D0A88BF2B09614100AAADDE /* Storyboarded.swift in Sources */,
+				4DCEB9DC2B176C1C0058D256 /* HomeDetailsViewController.swift in Sources */,
 				4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */,
 				4D0A88E12B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift in Sources */,
 				4D0A88D22B0B89D300AAADDE /* SignupCoordinator.swift in Sources */,
@@ -629,6 +691,7 @@
 				4DC49F5A2B0E75570008C9B6 /* PostCell.swift in Sources */,
 				4D6D74CE2B062D2300B1E789 /* IntroViewModel.swift in Sources */,
 				4D6D74D02B062D3200B1E789 /* LoginViewModel.swift in Sources */,
+				4DCEB9E42B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88C52B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88DF2B0B969C00AAADDE /* SplashViewModelProtocol.swift in Sources */,
 				4D0A88E32B0B96BB00AAADDE /* SplashCoordinator.swift in Sources */,
@@ -637,6 +700,7 @@
 				4D0A88DD2B0B968D00AAADDE /* SplashViewModel.swift in Sources */,
 				4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */,
 				4DC49F5D2B0E776C0008C9B6 /* PostModel.swift in Sources */,
+				4DCEB9E02B176C440058D256 /* HomeDetailsViewModel.swift in Sources */,
 				4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */,
 				4D0A88C72B0B63BC00AAADDE /* BaseViewModel.swift in Sources */,
 				4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */,

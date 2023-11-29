@@ -11,4 +11,8 @@ class HomeViewModel: HomeViewModelProtocol{
     var email: String?
     var password: String?
     weak var coordinatorDelegate : HomeViewModelCoordinatorDelegate?
+    func showHomeInfo(model: [CurrentConditions]){
+        self.coordinatorDelegate?.showHomeInfo(model: model)
+    }
 }
+
