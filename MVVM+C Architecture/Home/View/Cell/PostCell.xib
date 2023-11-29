@@ -9,44 +9,66 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="140" id="KGk-i7-Jjw" customClass="PostCell" customModule="MVVM_C_Architecture" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="140" id="prq-ir-RTR" customClass="PostCell" customModule="MVVM_C_Architecture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="prq-ir-RTR" id="mDL-mN-ev1">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sYD-JF-qb2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="3mo-FQ-CWU">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="140"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4F-Fr-gHt">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQp-tI-pyG">
+                                <rect key="frame" x="0.0" y="57.000000000000007" width="94" height="26.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqr-Rm-Wpr">
-                                <rect key="frame" x="0.0" y="75" width="320" height="65"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Etq-Mc-3XK">
+                                <rect key="frame" x="116" y="47.666666666666657" width="94" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zKd-wz-alh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADw-1U-0fb">
+                                <rect key="frame" x="232" y="57.000000000000007" width="94" height="26.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="sYD-JF-qb2" secondAttribute="bottom" id="07m-zu-WpL"/>
-                    <constraint firstItem="sYD-JF-qb2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BD1-yY-gkq"/>
-                    <constraint firstAttribute="trailing" secondItem="sYD-JF-qb2" secondAttribute="trailing" id="WcA-es-sfM"/>
-                    <constraint firstItem="sYD-JF-qb2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wNC-bR-iHN"/>
+                    <constraint firstItem="3mo-FQ-CWU" firstAttribute="top" secondItem="mDL-mN-ev1" secondAttribute="top" id="DzY-9L-H2W"/>
+                    <constraint firstAttribute="trailing" secondItem="3mo-FQ-CWU" secondAttribute="trailing" id="FHn-Wk-pGP"/>
+                    <constraint firstItem="3mo-FQ-CWU" firstAttribute="leading" secondItem="mDL-mN-ev1" secondAttribute="leading" id="Z5p-pP-ULn"/>
+                    <constraint firstAttribute="bottom" secondItem="3mo-FQ-CWU" secondAttribute="bottom" id="epZ-Cj-U93"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <viewLayoutGuide key="safeArea" id="vtz-7V-JAV"/>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="dateLabel" destination="L4F-Fr-gHt" id="vTx-Yg-E1L"/>
-                <outlet property="timeLabel" destination="fqr-Rm-Wpr" id="X2d-5e-VmO"/>
+                <outlet property="dateLabel" destination="ADw-1U-0fb" id="bXb-6x-IOn"/>
+                <outlet property="timeLabel" destination="RQp-tI-pyG" id="gdl-yc-bSa"/>
             </connections>
-            <point key="canvasLocation" x="54.961832061068698" y="22.535211267605636"/>
+            <point key="canvasLocation" x="59.541984732824424" y="22.535211267605636"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
+    </resources>
 </document>

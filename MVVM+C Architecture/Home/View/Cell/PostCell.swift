@@ -26,7 +26,8 @@ class PostCell: UITableViewCell {
     }
     func setDatas(){
         self.timeLabel.text = postData.datetime
-     //   self.dateLabel.int = postData.temp
+        self.dateLabel.text = String("\(postData.temp) °F")
+       // print("Datatime:\(postData.datetime)")
     
     }
 
