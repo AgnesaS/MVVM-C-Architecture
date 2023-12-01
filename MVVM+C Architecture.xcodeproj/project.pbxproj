@@ -47,6 +47,8 @@
 		4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */; };
 		4D6D74E92B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */; };
 		4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74EA2B06416E00B1E789 /* Coordinator.swift */; };
+		4DBCA5902B19DB5D009D13FC /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCA58F2B19DB5D009D13FC /* WeatherDataSource.swift */; };
+		4DBCA5922B19DB70009D13FC /* PostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCA5912B19DB70009D13FC /* PostDataSource.swift */; };
 		4DC49F5A2B0E75570008C9B6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC49F582B0E75570008C9B6 /* PostCell.swift */; };
 		4DC49F5B2B0E75570008C9B6 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC49F592B0E75570008C9B6 /* PostCell.xib */; };
 		4DC49F5D2B0E776C0008C9B6 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC49F5C2B0E776C0008C9B6 /* PostModel.swift */; };
@@ -109,6 +111,8 @@
 		4D6D74E62B06404B00B1E789 /* IntroViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelProtocol.swift; sourceTree = "<group>"; };
 		4D6D74E82B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		4D6D74EA2B06416E00B1E789 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4DBCA58F2B19DB5D009D13FC /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
+		4DBCA5912B19DB70009D13FC /* PostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataSource.swift; sourceTree = "<group>"; };
 		4DC49F582B0E75570008C9B6 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4DC49F592B0E75570008C9B6 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		4DC49F5C2B0E776C0008C9B6 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -419,6 +423,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		4DBCA58E2B19DB35009D13FC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4DBCA58F2B19DB5D009D13FC /* WeatherDataSource.swift */,
+				4DBCA5912B19DB70009D13FC /* PostDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		4DC49F572B0E75320008C9B6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +499,7 @@
 		4DEBF9202B0E330400F1A858 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4DBCA58E2B19DB35009D13FC /* DataSource */,
 				4DEBF9242B0E332100F1A858 /* Coordinator */,
 				4DEBF9232B0E331E00F1A858 /* Protocols */,
 				4DEBF9222B0E331C00F1A858 /* ViewModel */,
@@ -663,6 +677,7 @@
 				4DCEB9E22B176C560058D256 /* HomeDetailsViewModelProtocol.swift in Sources */,
 				4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */,
 				4DC49F602B0E79280008C9B6 /* PostRequest.swift in Sources */,
+				4DBCA5902B19DB5D009D13FC /* WeatherDataSource.swift in Sources */,
 				4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */,
 				4DCEB9E62B176CAF0058D256 /* HomeDetailsCoordinator.swift in Sources */,
 				4DEBF92E2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift in Sources */,
@@ -678,6 +693,7 @@
 				4D0A88E72B0CF93F00AAADDE /* SlideCell.swift in Sources */,
 				4D6D74D22B062D4400B1E789 /* IntroCoordinator.swift in Sources */,
 				4D0A88CE2B0B89B900AAADDE /* SignupViewModelProtocol.swift in Sources */,
+				4DBCA5922B19DB70009D13FC /* PostDataSource.swift in Sources */,
 				4D0A88DB2B0B968000AAADDE /* SplashViewController.swift in Sources */,
 				4D6D74C42B062CB400B1E789 /* AppCoordinator.swift in Sources */,
 				4D6D74DF2B06332500B1E789 /* UIView+Extension.swift in Sources */,

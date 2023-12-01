@@ -31,4 +31,7 @@ extension HomeCoordinator: HomeViewModelCoordinatorDelegate{
 //        homeDetailsCoordinator?.viewModel.coordinatorDelegate = self
         homeDetailsCoordinator?.start()
     }
+//    func logOut(){
+//        self.navigationController?.popToRootViewController(animated: false)
+//    }
 }

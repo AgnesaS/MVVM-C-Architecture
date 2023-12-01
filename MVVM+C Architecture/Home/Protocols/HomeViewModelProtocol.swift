@@ -9,7 +9,11 @@ import Foundation
 
 protocol HomeViewModelProtocol :  BaseViewModel {
     var coordinatorDelegate: HomeViewModelCoordinatorDelegate? {get set}
-      var email: String? { get set }
-      var password: String? { get set }
-    
+    var weatherDataSource: WeatherDataSource? {get}
+    var postDataSource: PostDataSource? {get}
+    func getWeather(weather: Welcome)
+    func getPost(post: Welcome)
+    var email: String? { get set }
+    var password: String? { get set }
+    //      func logOut()
 }

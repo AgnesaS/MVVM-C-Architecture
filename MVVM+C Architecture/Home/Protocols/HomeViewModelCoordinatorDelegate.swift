@@ -10,4 +10,5 @@ import Foundation
 protocol HomeViewModelCoordinatorDelegate: class{
     
     func showHomeInfo(model: [CurrentConditions])
+//    func logOut()
 }
