@@ -34,14 +34,14 @@ class HomeDetailsViewController: UIViewController, Storyboarded {
 //        }
 //        self.secondLabel.text = weatherModel?.days.first?.datetime
 //        print("FirstLabel \(String(describing: weatherModel?.days.first?.datetime))")
-        if let temp = viewModel?.model.first?.temp {
+        if let temp = viewModel?.model.temp{
             self.firstLabel.text = String(" \(temp)°F")
         } else {
             // where temp is nil
             self.firstLabel.text = "N/A"
         }
-        self.secondLabel.text = viewModel?.model.first?.datetime
-        print("FirstLabel \(String(describing: viewModel?.model.first?.datetime))")
+        self.secondLabel.text = viewModel?.model.datetime
+        print("FirstLabel \(String(describing: viewModel?.model.datetime))")
     }
     @IBAction func backBtnTapped(_ sender: Any) {
         self.coordinator?.stop()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeCoordinator: PushCoordinator{
+class HomeCoordinator: PushCoordinator, HomeDetailsViewModelCoordinatorDelegate{
     var navigationController: UINavigationController?
     var viewController: HomeViewController?
     var configuration: ((HomeViewController) -> ())?
@@ -19,6 +19,7 @@ class HomeCoordinator: PushCoordinator{
         self.navigationController = navigationController
         self.viewController = HomeViewController.instantiate(.home)
         self.viewController?.viewModel = viewModel
+        self.viewModel.coordinatorDelegate = self
     }
     
 //    func logOut(){
@@ -26,12 +27,9 @@ class HomeCoordinator: PushCoordinator{
 //    }
 }
 extension HomeCoordinator: HomeViewModelCoordinatorDelegate{
-    func showHomeInfo(model: [CurrentConditions]) {
+    func showHomeInfo(model: CurrentConditions) {
         homeDetailsCoordinator = HomeDetailsCoordinator(viewModel: HomeDetailsViewModel(model: model), navigationController: navigationController)
-//        homeDetailsCoordinator?.viewModel.coordinatorDelegate = self
+        homeDetailsCoordinator?.viewModel.coordinatorDelegate = self
         homeDetailsCoordinator?.start()
     }
-//    func logOut(){
-//        self.navigationController?.popToRootViewController(animated: false)
-//    }
 }

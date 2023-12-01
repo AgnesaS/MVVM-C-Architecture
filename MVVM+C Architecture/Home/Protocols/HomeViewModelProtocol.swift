@@ -11,6 +11,7 @@ protocol HomeViewModelProtocol :  BaseViewModel {
     var coordinatorDelegate: HomeViewModelCoordinatorDelegate? {get set}
     var weatherDataSource: WeatherDataSource? {get}
     var postDataSource: PostDataSource? {get}
+    func showDetailsView(model: CurrentConditions)
     func getWeather(weather: Welcome)
     func getPost(post: Welcome)
     var email: String? { get set }

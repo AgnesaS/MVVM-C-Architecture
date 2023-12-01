@@ -8,10 +8,10 @@
 import Foundation
 
 class HomeDetailsViewModel: HomeDetailsViewModelProtocol {
-    var model: [CurrentConditions]
+    var model: CurrentConditions
     
     var coordinatorDelegate: HomeDetailsViewModelCoordinatorDelegate?
-    public init(model: [CurrentConditions]){
+    public init(model: CurrentConditions){
         self.model = model
     }
 }

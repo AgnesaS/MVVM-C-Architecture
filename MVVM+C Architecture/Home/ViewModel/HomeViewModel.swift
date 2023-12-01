@@ -14,14 +14,14 @@ class HomeViewModel: HomeViewModelProtocol{
     var email: String?
     var password: String?
     weak var coordinatorDelegate : HomeViewModelCoordinatorDelegate?
-    func showHomeInfo(model: [CurrentConditions]){
-        self.coordinatorDelegate?.showHomeInfo(model: model)
-    }
+//    func showHomeInfo(model: [CurrentConditions]){
+//        self.coordinatorDelegate?.showHomeInfo(model: model)
+//    }
     
     public init(){
         self.weatherDataSource = WeatherDataSource()
         self.postDataSource = PostDataSource()
-       // self.weatherDataSource.
+        self.weatherDataSource?.delegate = self
     }
     func getWeather(weather: Welcome){
         self.weatherDataSource?.postResponse = weather
@@ -29,8 +29,17 @@ class HomeViewModel: HomeViewModelProtocol{
     func getPost(post: Welcome){
         self.postDataSource?.postResponse = post
     }
+    func showHomeInfo(model: CurrentConditions) {
+        self.coordinatorDelegate?.showHomeInfo(model: model)
+    }
+    
 //    func logOut(){
 //        self.coordinatorDelegate?.logOut()
 //    }
+}
+extension HomeViewModel: HomeDetailsDataSourceProtocol{
+    func showDetailsView(model: CurrentConditions) {
+        self.showHomeInfo(model: model)
+    }
 }
 

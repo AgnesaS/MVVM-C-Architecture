@@ -9,5 +9,5 @@ import Foundation
 
 protocol HomeDetailsViewModelProtocol: BaseViewModel {
     var coordinatorDelegate: HomeDetailsViewModelCoordinatorDelegate? {get set}
-    var model: [CurrentConditions] {get set}
+    var model: CurrentConditions {get set}
 }
