@@ -14,7 +14,5 @@ protocol HomeViewModelProtocol :  BaseViewModel {
     func showDetailsView(model: CurrentConditions)
     func getWeather(weather: Welcome)
     func getPost(post: Welcome)
-    var email: String? { get set }
-    var password: String? { get set }
     //      func logOut()
 }

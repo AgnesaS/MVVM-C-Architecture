@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="caL-HR-vvV">
-                                <rect key="frame" x="20" y="549" width="353" height="269"/>
+                                <rect key="frame" x="20" y="549" width="353" height="229"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvh-Mq-cOl">
@@ -64,7 +64,7 @@
                             <constraint firstItem="xvh-Mq-cOl" firstAttribute="top" secondItem="N0a-SA-aZl" secondAttribute="top" constant="50" id="6rJ-cH-Q9B"/>
                             <constraint firstItem="YAN-hh-Zig" firstAttribute="top" secondItem="rnC-Rs-ixQ" secondAttribute="bottom" constant="60" id="AdH-7r-JQT"/>
                             <constraint firstItem="N0a-SA-aZl" firstAttribute="trailing" secondItem="YAN-hh-Zig" secondAttribute="trailing" constant="20" id="BeX-WE-2UM"/>
-                            <constraint firstItem="N0a-SA-aZl" firstAttribute="bottom" secondItem="caL-HR-vvV" secondAttribute="bottom" id="FFx-fF-AL1"/>
+                            <constraint firstItem="N0a-SA-aZl" firstAttribute="bottom" secondItem="caL-HR-vvV" secondAttribute="bottom" constant="40" id="FFx-fF-AL1"/>
                             <constraint firstItem="N0a-SA-aZl" firstAttribute="trailing" secondItem="caL-HR-vvV" secondAttribute="trailing" constant="20" id="IoI-wP-NaR"/>
                             <constraint firstItem="caL-HR-vvV" firstAttribute="leading" secondItem="N0a-SA-aZl" secondAttribute="leading" constant="20" id="OFc-K0-np8"/>
                             <constraint firstItem="xvh-Mq-cOl" firstAttribute="centerX" secondItem="4Xh-Yh-1VQ" secondAttribute="centerX" id="RBQ-Xa-hP3"/>

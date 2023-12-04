@@ -13,13 +13,14 @@ class AppCoordinator: Coordinator {
     var splashCoordinator: SplashCoordinator?
     var introCoordinator: IntroCoordinator?
     var loginCoordinator: LoginCoordinator?
+    var tabCoordinator: TabBarCoordinator?
     
     init(window: UIWindow) {
         self.window = window
     }
     
     func start() {
-        initializeSplash()
+        initializeMainApp()
     }
     private func initializeSplash()
     {
@@ -52,6 +53,15 @@ class AppCoordinator: Coordinator {
             window.rootViewController = nav
         }
     }
+    func initializeMainApp(){
+        let tabBarController = MainTabBarContainer.instantiate(.tabBar)
+     //   Account.shared.delegate = self
+        let nav =  UINavigationController(rootViewController: tabBarController)
+        UIApplication.shared.windows.first?.rootViewController = nav
+        tabCoordinator = TabBarCoordinator(tabBarController:tabBarController, appLayout: MainAppLayout())
+        tabCoordinator?.start()
+    }
+    
 }
 extension AppCoordinator: SplashCoordinatorDelegate {
     func splashShownSuccessful() {

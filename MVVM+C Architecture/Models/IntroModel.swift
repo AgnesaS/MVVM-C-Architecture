@@ -10,3 +10,9 @@ import UIKit
 struct IntroModel {
     let image: UIImage?
 }
+
+struct User{
+    var username: String?
+    var password: String?
+    var isChecked: Bool
+}

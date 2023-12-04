@@ -29,4 +29,18 @@ class SplashViewController: UIViewController, Storyboarded{
     func splashAppear(){
         self.viewModel?.splashShown()
     }
+    
+    func checkToken(){
+        let defaults = UserDefaults.standard
+        if defaults.bool(forKey: "FirstLaunch") == true {
+            let token = Defaults.string(forKey: USER_TOKEN)
+            if token != "" && token != nil{
+              //  self.viewModel?.goToMain()
+            }
+            else {
+                self.viewModel?.splashShown()
+            }
+        }
+    }
+    
 }

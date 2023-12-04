@@ -49,6 +49,7 @@
 		4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D74EA2B06416E00B1E789 /* Coordinator.swift */; };
 		4DBCA5902B19DB5D009D13FC /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCA58F2B19DB5D009D13FC /* WeatherDataSource.swift */; };
 		4DBCA5922B19DB70009D13FC /* PostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCA5912B19DB70009D13FC /* PostDataSource.swift */; };
+		4DBCA5942B1A2581009D13FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCA5932B1A2581009D13FC /* Constants.swift */; };
 		4DC49F5A2B0E75570008C9B6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC49F582B0E75570008C9B6 /* PostCell.swift */; };
 		4DC49F5B2B0E75570008C9B6 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC49F592B0E75570008C9B6 /* PostCell.xib */; };
 		4DC49F5D2B0E776C0008C9B6 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC49F5C2B0E776C0008C9B6 /* PostModel.swift */; };
@@ -59,6 +60,19 @@
 		4DCEB9E22B176C560058D256 /* HomeDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9E12B176C560058D256 /* HomeDetailsViewModelProtocol.swift */; };
 		4DCEB9E42B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9E32B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift */; };
 		4DCEB9E62B176CAF0058D256 /* HomeDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEB9E52B176CAF0058D256 /* HomeDetailsCoordinator.swift */; };
+		4DDB156C2B1E1216009B21B3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB156B2B1E1216009B21B3 /* TabBarViewController.swift */; };
+		4DDB156E2B1E13AF009B21B3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDB156D2B1E13AF009B21B3 /* TabBar.storyboard */; };
+		4DDB15722B1E15C4009B21B3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB15712B1E15C4009B21B3 /* TabBarCoordinator.swift */; };
+		4DDB15742B1E1704009B21B3 /* MainAppLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB15732B1E1704009B21B3 /* MainAppLayoutProtocol.swift */; };
+		4DDB15772B1E172A009B21B3 /* TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB15762B1E172A009B21B3 /* TabLayout.swift */; };
+		4DDB15792B1E1740009B21B3 /* HomeTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB15782B1E1740009B21B3 /* HomeTabLayout.swift */; };
+		4DDB157C2B1E1760009B21B3 /* ProductsTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB157B2B1E175F009B21B3 /* ProductsTabLayout.swift */; };
+		4DDB157F2B1E2168009B21B3 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB157E2B1E2168009B21B3 /* ProductViewController.swift */; };
+		4DDB15812B1E2178009B21B3 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDB15802B1E2178009B21B3 /* Product.storyboard */; };
+		4DDB15852B1E23C3009B21B3 /* ProductCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB15842B1E23C3009B21B3 /* ProductCoordinator.swift */; };
+		4DDB15892B1E257B009B21B3 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB15882B1E257B009B21B3 /* ProductViewModel.swift */; };
+		4DDB158B2B1E258F009B21B3 /* ProductViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB158A2B1E258F009B21B3 /* ProductViewModelProtocol.swift */; };
+		4DDB158D2B1E259F009B21B3 /* ProductViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB158C2B1E259F009B21B3 /* ProductViewModelCoordinatorDelegate.swift */; };
 		4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */; };
 		4DEBF9282B0E336A00F1A858 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEBF9272B0E336A00F1A858 /* Home.storyboard */; };
 		4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */; };
@@ -113,6 +127,7 @@
 		4D6D74EA2B06416E00B1E789 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4DBCA58F2B19DB5D009D13FC /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		4DBCA5912B19DB70009D13FC /* PostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataSource.swift; sourceTree = "<group>"; };
+		4DBCA5932B1A2581009D13FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4DC49F582B0E75570008C9B6 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4DC49F592B0E75570008C9B6 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		4DC49F5C2B0E776C0008C9B6 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -123,6 +138,19 @@
 		4DCEB9E12B176C560058D256 /* HomeDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 		4DCEB9E32B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		4DCEB9E52B176CAF0058D256 /* HomeDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsCoordinator.swift; sourceTree = "<group>"; };
+		4DDB156B2B1E1216009B21B3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4DDB156D2B1E13AF009B21B3 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		4DDB15712B1E15C4009B21B3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		4DDB15732B1E1704009B21B3 /* MainAppLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppLayoutProtocol.swift; sourceTree = "<group>"; };
+		4DDB15762B1E172A009B21B3 /* TabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLayout.swift; sourceTree = "<group>"; };
+		4DDB15782B1E1740009B21B3 /* HomeTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabLayout.swift; sourceTree = "<group>"; };
+		4DDB157B2B1E175F009B21B3 /* ProductsTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTabLayout.swift; sourceTree = "<group>"; };
+		4DDB157E2B1E2168009B21B3 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		4DDB15802B1E2178009B21B3 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		4DDB15842B1E23C3009B21B3 /* ProductCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinator.swift; sourceTree = "<group>"; };
+		4DDB15882B1E257B009B21B3 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		4DDB158A2B1E258F009B21B3 /* ProductViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelProtocol.swift; sourceTree = "<group>"; };
+		4DDB158C2B1E259F009B21B3 /* ProductViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		4DEBF9252B0E335A00F1A858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4DEBF9272B0E336A00F1A858 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4DEBF9292B0E399700F1A858 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -263,8 +291,10 @@
 		4D6D74A32B062C1500B1E789 /* MVVM+C Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				4DDB157D2B1E2148009B21B3 /* Product */,
 				4DC49F5E2B0E79080008C9B6 /* NetworkLayer */,
 				4D6D74D52B062EF400B1E789 /* Models */,
+				4DDB156A2B1E11E3009B21B3 /* TabBar */,
 				4DCEB9D62B176BC70058D256 /* HomeDetails */,
 				4DEBF9202B0E330400F1A858 /* Home */,
 				4D6D74E02B0637BD00B1E789 /* Signup */,
@@ -388,6 +418,7 @@
 			children = (
 				4D0A88BE2B09614100AAADDE /* Storyboarded.swift */,
 				4D6D74DE2B06332500B1E789 /* UIView+Extension.swift */,
+				4DBCA5932B1A2581009D13FC /* Constants.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -494,6 +525,89 @@
 				4DCEB9E52B176CAF0058D256 /* HomeDetailsCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4DDB156A2B1E11E3009B21B3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB15752B1E170E009B21B3 /* TabLayout */,
+				4DDB15702B1E155C009B21B3 /* Coordinator */,
+				4DDB156F2B1E1559009B21B3 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4DDB156F2B1E1559009B21B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB156B2B1E1216009B21B3 /* TabBarViewController.swift */,
+				4DDB156D2B1E13AF009B21B3 /* TabBar.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DDB15702B1E155C009B21B3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB15712B1E15C4009B21B3 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4DDB15752B1E170E009B21B3 /* TabLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB15732B1E1704009B21B3 /* MainAppLayoutProtocol.swift */,
+				4DDB157B2B1E175F009B21B3 /* ProductsTabLayout.swift */,
+				4DDB15762B1E172A009B21B3 /* TabLayout.swift */,
+				4DDB15782B1E1740009B21B3 /* HomeTabLayout.swift */,
+			);
+			path = TabLayout;
+			sourceTree = "<group>";
+		};
+		4DDB157D2B1E2148009B21B3 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB15832B1E23A6009B21B3 /* Coordinator */,
+				4DDB15872B1E2558009B21B3 /* Protocols */,
+				4DDB15862B1E2555009B21B3 /* ViewModel */,
+				4DDB15822B1E23A2009B21B3 /* View */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		4DDB15822B1E23A2009B21B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB157E2B1E2168009B21B3 /* ProductViewController.swift */,
+				4DDB15802B1E2178009B21B3 /* Product.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DDB15832B1E23A6009B21B3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB15842B1E23C3009B21B3 /* ProductCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4DDB15862B1E2555009B21B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB15882B1E257B009B21B3 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DDB15872B1E2558009B21B3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB158A2B1E258F009B21B3 /* ProductViewModelProtocol.swift */,
+				4DDB158C2B1E259F009B21B3 /* ProductViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		4DEBF9202B0E330400F1A858 /* Home */ = {
@@ -612,9 +726,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D6D74B12B062C1600B1E789 /* LaunchScreen.storyboard in Resources */,
+				4DDB15812B1E2178009B21B3 /* Product.storyboard in Resources */,
 				4D6D74AE2B062C1600B1E789 /* Assets.xcassets in Resources */,
 				4D6D74CC2B062D1000B1E789 /* Login.storyboard in Resources */,
 				4D0A88E82B0CF93F00AAADDE /* SlideCell.xib in Resources */,
+				4DDB156E2B1E13AF009B21B3 /* TabBar.storyboard in Resources */,
 				4DCEB9DE2B176C2A0058D256 /* HomeDetails.storyboard in Resources */,
 				4D1C85C52B161B4500C17919 /* WeatherCell.xib in Resources */,
 				4DC49F5B2B0E75570008C9B6 /* PostCell.xib in Resources */,
@@ -677,18 +793,22 @@
 				4DCEB9E22B176C560058D256 /* HomeDetailsViewModelProtocol.swift in Sources */,
 				4D6D74EB2B06416E00B1E789 /* Coordinator.swift in Sources */,
 				4DC49F602B0E79280008C9B6 /* PostRequest.swift in Sources */,
+				4DDB157F2B1E2168009B21B3 /* ProductViewController.swift in Sources */,
 				4DBCA5902B19DB5D009D13FC /* WeatherDataSource.swift in Sources */,
+				4DDB15892B1E257B009B21B3 /* ProductViewModel.swift in Sources */,
 				4DEBF92A2B0E399700F1A858 /* HomeViewModel.swift in Sources */,
 				4DCEB9E62B176CAF0058D256 /* HomeDetailsCoordinator.swift in Sources */,
 				4DEBF92E2B0E39BF00F1A858 /* HomeViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88C32B0964DD00AAADDE /* LoginViewModelProtocol.swift in Sources */,
 				4D6D74CA2B062D0500B1E789 /* LoginViewController.swift in Sources */,
 				4D0A88CC2B0B897F00AAADDE /* SignupViewModel.swift in Sources */,
+				4DDB158D2B1E259F009B21B3 /* ProductViewModelCoordinatorDelegate.swift in Sources */,
 				4D6D74C62B062CD600B1E789 /* IntroViewController.swift in Sources */,
 				4D6D74D72B062F0500B1E789 /* IntroModel.swift in Sources */,
 				4DEBF92C2B0E39A600F1A858 /* HomeViewModelProtocol.swift in Sources */,
 				4D6D74D42B062D5200B1E789 /* LoginCoordinator.swift in Sources */,
 				4D0A88ED2B0CFEE900AAADDE /* SlideDataSource.swift in Sources */,
+				4DDB15772B1E172A009B21B3 /* TabLayout.swift in Sources */,
 				4D1C85C42B161B4500C17919 /* WeatherCell.swift in Sources */,
 				4D0A88E72B0CF93F00AAADDE /* SlideCell.swift in Sources */,
 				4D6D74D22B062D4400B1E789 /* IntroCoordinator.swift in Sources */,
@@ -697,28 +817,36 @@
 				4D0A88DB2B0B968000AAADDE /* SplashViewController.swift in Sources */,
 				4D6D74C42B062CB400B1E789 /* AppCoordinator.swift in Sources */,
 				4D6D74DF2B06332500B1E789 /* UIView+Extension.swift in Sources */,
+				4DBCA5942B1A2581009D13FC /* Constants.swift in Sources */,
 				4D0A88BF2B09614100AAADDE /* Storyboarded.swift in Sources */,
 				4DCEB9DC2B176C1C0058D256 /* HomeDetailsViewController.swift in Sources */,
+				4DDB15742B1E1704009B21B3 /* MainAppLayoutProtocol.swift in Sources */,
 				4D6D74E72B06404B00B1E789 /* IntroViewModelProtocol.swift in Sources */,
 				4D0A88E12B0B96AF00AAADDE /* SplashViewModelCoordinatoDelegate.swift in Sources */,
+				4DDB15722B1E15C4009B21B3 /* TabBarCoordinator.swift in Sources */,
 				4D0A88D22B0B89D300AAADDE /* SignupCoordinator.swift in Sources */,
 				4D6D74E92B06405C00B1E789 /* IntroViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88D02B0B89C900AAADDE /* SignupViewModelCoordinatorDelegate.swift in Sources */,
 				4DC49F5A2B0E75570008C9B6 /* PostCell.swift in Sources */,
+				4DDB157C2B1E1760009B21B3 /* ProductsTabLayout.swift in Sources */,
 				4D6D74CE2B062D2300B1E789 /* IntroViewModel.swift in Sources */,
 				4D6D74D02B062D3200B1E789 /* LoginViewModel.swift in Sources */,
 				4DCEB9E42B176C9F0058D256 /* HomeDetailsViewModelCoordinatorDelegate.swift in Sources */,
 				4D0A88C52B0964F300AAADDE /* LoginViewModelCoordinatorDelegate.swift in Sources */,
+				4DDB158B2B1E258F009B21B3 /* ProductViewModelProtocol.swift in Sources */,
 				4D0A88DF2B0B969C00AAADDE /* SplashViewModelProtocol.swift in Sources */,
 				4D0A88E32B0B96BB00AAADDE /* SplashCoordinator.swift in Sources */,
+				4DDB15792B1E1740009B21B3 /* HomeTabLayout.swift in Sources */,
 				4D6D74E32B0637E900B1E789 /* SignupViewController.swift in Sources */,
 				4DEBF9302B0E39CB00F1A858 /* HomeCoordinator.swift in Sources */,
 				4D0A88DD2B0B968D00AAADDE /* SplashViewModel.swift in Sources */,
 				4DEBF9262B0E335A00F1A858 /* HomeViewController.swift in Sources */,
+				4DDB15852B1E23C3009B21B3 /* ProductCoordinator.swift in Sources */,
 				4DC49F5D2B0E776C0008C9B6 /* PostModel.swift in Sources */,
 				4DCEB9E02B176C440058D256 /* HomeDetailsViewModel.swift in Sources */,
 				4D0A88C12B09635600AAADDE /* BaseNavigationController.swift in Sources */,
 				4D0A88C72B0B63BC00AAADDE /* BaseViewModel.swift in Sources */,
+				4DDB156C2B1E1216009B21B3 /* TabBarViewController.swift in Sources */,
 				4D6D74A52B062C1500B1E789 /* AppDelegate.swift in Sources */,
 				4D6D74A72B062C1500B1E789 /* SceneDelegate.swift in Sources */,
 			);
