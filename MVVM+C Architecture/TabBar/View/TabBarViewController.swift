@@ -10,7 +10,7 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        layer.path = UIBezierPath(roundedRect: CGRect(x: 50, y: 5, width: self.tabBar.bounds.width - 100, height: self.tabBar.bounds.height + 10), cornerRadius: 23).cgPath
+        layer.path = UIBezierPath(roundedRect: CGRect(x: 50, y: 5, width: self.tabBar.bounds.width - 100, height: self.tabBar.bounds.height + 10), cornerRadius: 20).cgPath
         layer.shadowColor = UIColor.darkGray.cgColor
         layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         layer.shadowRadius = 3

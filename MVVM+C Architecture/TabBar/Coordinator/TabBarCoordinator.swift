@@ -20,7 +20,6 @@ class TabBarCoordinator: Coordinator {
     init(tabBarController: UITabBarController, appLayout: MainAppLayoutProtocol) {
         self.tabBarController = tabBarController
         self.appLayout = appLayout
-        //self.appLayout.parentCoordinator = self
     }
     
     func start() {

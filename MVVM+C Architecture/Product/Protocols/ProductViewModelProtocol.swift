@@ -7,5 +7,7 @@
 
 import Foundation
 protocol ProductViewModelProtocol{
-    
+    var coordinatorDelegate: ProductViewModelCoordinatorDelegate? {get set}
+    var productDataSource: ProductDataSource? {get}
+    func getProduct(product: Products)
 }

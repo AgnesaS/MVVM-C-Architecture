@@ -20,7 +20,7 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        initializeMainApp()
+        initializeSplash()
     }
     private func initializeSplash()
     {
@@ -55,7 +55,6 @@ class AppCoordinator: Coordinator {
     }
     func initializeMainApp(){
         let tabBarController = MainTabBarContainer.instantiate(.tabBar)
-     //   Account.shared.delegate = self
         let nav =  UINavigationController(rootViewController: tabBarController)
         UIApplication.shared.windows.first?.rootViewController = nav
         tabCoordinator = TabBarCoordinator(tabBarController:tabBarController, appLayout: MainAppLayout())

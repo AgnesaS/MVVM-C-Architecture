@@ -6,29 +6,76 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ProductViewController: UIViewController,Storyboarded {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    
+    @IBOutlet weak var productCollectionView: UICollectionView!
+    
     var viewModel: ProductViewModelProtocol?
     var coordinator: ProductCoordinator?
+    var productRequest: Products?
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCollectionView()
+        getMethod { result in
+            switch result {
+            case .success(let products):
+                // Handle the successful response with your 'Products' type
+                print("GET Responseee: \(products)")
+                self.productRequest = products
+                DispatchQueue.main.async {
+                    self.productCollectionView.reloadData()
+                }
+            case .failure(let error):
+                // Handle the error
+                print("Error: \(error)")
+                
+                // You may want to show an error message to the user or take other actions
+            }
+        }
     }
-    */
-
+    func setupCollectionView(){
+        productCollectionView.register(UINib(nibName: "ProductCell", bundle: nil), forCellWithReuseIdentifier: ProductCell.identifier)
+        productCollectionView.dataSource = self.viewModel?.productDataSource
+        productCollectionView.delegate = self.viewModel?.productDataSource
+        
+    }
+    func getMethod(completion: @escaping (Result<Products, Error>) -> Void) {
+        let urlString = "https://dummyjson.com/products"
+        
+        if let url = URL(string: urlString) {
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            
+            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                if let error = error {
+                    completion(.failure(error))
+                    return
+                }
+                
+                if let data = data {
+                    do {
+                        // Parse the JSON response
+                        let products = try JSONDecoder().decode(Products.self, from: data)
+                        completion(.success(products))
+                        self.productRequest = products
+                        self.viewModel?.getProduct(product: self.productRequest!)
+                        DispatchQueue.main.async {
+                            self.productCollectionView.reloadData()
+                        }
+                    } catch {
+                        completion(.failure(error))
+                    }
+                }
+            }
+            
+            task.resume()
+        }
+    }
+    
 }
 extension ProductViewController: Coordinated {
     func getCoordinator() -> Coordinator? {

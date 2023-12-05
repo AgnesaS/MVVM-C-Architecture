@@ -15,6 +15,7 @@ class LoginCoordinator: PushCoordinator{
     var viewModel : LoginViewModelProtocol
     var signupCoordinator : SignupCoordinator?
     var homeCoordinator: HomeCoordinator?
+    var tabCoordinator: TabBarCoordinator?
 
     
     init(viewModel: LoginViewModelProtocol, navigationController:UINavigationController?) {
@@ -27,9 +28,12 @@ class LoginCoordinator: PushCoordinator{
 }
 extension LoginCoordinator: LoginViewModelCoordinatorDelegate{
     func showHome() {
-        let homeViewModel = HomeViewModel()
-        homeCoordinator = HomeCoordinator(viewModel: HomeViewModel(), navigationController: self.viewController?.navigationController)
-        homeCoordinator?.start()
+        let tabBarController = MainTabBarContainer.instantiate(.tabBar)
+     //   Account.shared.delegate = self
+        let nav =  UINavigationController(rootViewController: tabBarController)
+        UIApplication.shared.windows.first?.rootViewController = nav
+        tabCoordinator = TabBarCoordinator(tabBarController:tabBarController, appLayout: MainAppLayout())
+        tabCoordinator?.start()
     }
     
     func showSignup() {
